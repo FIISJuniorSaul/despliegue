@@ -23,7 +23,7 @@ pipeline {
     {
         failure
         {
-            emailext body: 'sumary', subject: 'estado pipeline', to: 'junior.saul.maiz@gmail.com'
+            emailext body: 'Sumary', subject: 'Status Pipeline', to: 'junior.maiz@unas.edu.pe'
         }
     }
 }
