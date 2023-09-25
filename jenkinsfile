@@ -21,9 +21,13 @@ pipeline {
     }
     post
     {
-        failure
+        success 
         {
-            emailext body: 'Sumary', subject: 'Status Pipeline', to: 'junior.maiz@unas.edu.pe'
+        emailext body: 'Pipeline was successful', subject: 'Estado del pipeline: Éxito', to: 'junior.saul.maiz@gmail.com'
+        }
+        failure 
+        {
+        emailext body: 'Pipeline failed', subject: 'Estado del pipeline: Fallo', to: 'junior.saul.maiz@gmail.com'
         }
     }
 }
